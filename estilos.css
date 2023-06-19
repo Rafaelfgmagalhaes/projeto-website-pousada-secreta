@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro';
+}
+
+:root{
+    --cor0: rgb(75, 122, 167);
+    --cor1: rgba(31, 92, 57, 0.534);
+    --cor2: rgb(18, 190, 119);
+    --cor3: rgb(77, 74, 74);
+    --cor4: #fff;
+    --cor5: rgb(148, 145, 145);
+}
+
+header{
+    width: 100%;
+    background-color: var(--cor4);
+}
+
+header div{
+    width: 80%;
+    max-width: 80%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+header div h1 a{
+    color: var(--cor3);
+    text-decoration: none;
+}
+
+header div h1 a span{
+    color: var(--cor0);
+}
+
+header div nav a{
+    font-size: 16px;
+    color: var(--cor5);
+    text-decoration: none;
+    padding: 8px;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/img-fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 170px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner div{
+    color: #fff;
+    text-shadow: 1px 1px 3px white;
+    background-color: var(--cor1);
+    border: 1px solid #ffffff79;
+    border-radius: 8px;
+    width: 370px;
+    min-width: 365px;
+    height: 120px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+    gap: 15px;
+}
+
+.banner div h2{
+    font-size: 40px;
+}
+
+.banner div span{
+    font-size: 22px;
+}
+
+.apresentacao{
+    width: 100%;
+}
+
+.apresentacao .limita-area{
+    width: 80%;
+    max-width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 35px;
+}
+
+.apresentacao .limita-area h3{
+    font-size: 26px;
+    font-weight: normal;
+    color: var(--cor3);
+    padding: 12px;
+}
+
+.apresentacao .limita-area p{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--cor5);
+    padding: 8px;
+}
+
+.apresentacao .limita-area .fotos-quartos{
+    width: 100%;
+    padding: 35px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apresentacao .limita-area .fotos-quartos .cartao{
+    width: calc((100% / 3 ) - 15px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--cor2);
+}
+
+.apresentacao .limita-area .fotos-quartos .cartao img{
+    width: 100%;
+}
+
+.apresentacao .limita-area .fotos-quartos .cartao a{
+    color: var(--cor3);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.apresentacao .limita-area .fotos-quartos .cartao a:hover{
+    background-color: rgb(112, 245, 190);
+    color: rgb(22, 54, 22);
+    border-radius: 10px;
+}
+
+.rota{
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+    box-sizing: border-box;
+}
+
+.rota h3{
+    font-size:  30px;
+    font-weight: normal;
+    color: var(--cor3);
+}
+
+.rota p{
+    font-size: 14px;
+    color: var(--cor5);
+    padding: 15px 0 20px 0;
+}
+
+.rota iframe{
+    width: 100%;
+    height: 350px;
+    padding-top: 15px;
+}
+
+.sobre{
+    width: 100%;
+    padding: 40px 0;
+}
+
+.sobre .limita-area{
+    width: 80%;
+    max-width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.sobre .limita-area h3{
+    font-size: 26px;
+    font-weight: normal;
+    color: var(--cor3);
+    padding: 20px;
+}
+
+.sobre .limita-area p{
+    font-size: 14px;
+    color: var(--cor5);
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.sobre .limita-area .servicos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 35px;
+}
+
+.sobre .limita-area .servicos .card{
+    width: calc((100% / 2) - 30px);
+    max-width: calc((200% / 2) - 30px);
+    min-width: 350px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre .limita-area .servicos .card .card-text{
+    width: 70%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.sobre .limita-area .servicos .card .card-text h4{
+    font-size: 14px;
+    color: var(--cor3);
+}
+
+.sobre .limita-area .servicos .card .card-text p{
+    font-size: 12px;
+    color: var(--cor5);
+    padding: 20px 0  0 0 ;
+}
+
+.sobre .limita-area .servicos .card .card-img{
+    width: 25%;
+    height: 100px;
+}
+
+.sobre .limita-area .servicos .card .card-img img{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    width: 100%;
+    background-color: var(--cor2);
+    color: #fff;
+    text-align: center;
+}
+
+footer .limita-area{
+    width: 80%;
+    max-width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    border-bottom: 1px solid rgb(45, 92, 45);
+}
+
+footer .limita-area h3{
+    font-size: 16px;
+    width: 150px;
+    text-align: left;
+}
+
+footer .limita-area p{
+    /* width: 160px; */
+    text-align: center;
+}
+
+footer .limita-area p a{
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .end::before{
+    content: " ";
+    width: 20px;
+    height: 20px;
+    padding: 0 15px;
+    background-image: url('./img/icones/endereco.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer .tel::before{
+    content: " ";
+    width: 20px;
+    height: 20px;
+    padding: 0 15px;
+    background-image: url('./img/icones/telefone.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer .agenda::before{
+    content: " ";
+    width: 20px;
+    height: 20px;
+    padding: 0 15px;
+    background-image: url('./img/icones/calendario.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer .copyright{
+    font-size: 14px;
+    padding: 15px;
+}
